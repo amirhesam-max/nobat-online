@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #eef2f7;
+  --fg: #1f2937;
+  --muted: #6b7280;
+  --card: #eef2f7;
+  --accent: #0ea5e9;
+  --shadow-light: #ffffff;
+  --shadow-dark: #cdd5e0;
+}
+
+.dark {
+  --bg: #1e293b;
+  --fg: #e2e8f0;
+  --muted: #94a3b8;
+  --card: #1e293b;
+  --accent: #38bdf8;
+  --shadow-light: #2a3a55;
+  --shadow-dark: #121a2a;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  transition: background 0.3s, color 0.3s;
+  background-image: url("/bg-dental.svg");
+  background-size: 400px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.neu {
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.neu:hover {
+  transform: translateY(-2px);
+  box-shadow: 10px 10px 20px var(--shadow-dark), -10px -10px 20px var(--shadow-light);
+}
+
+.neu-btn {
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light);
+  transition: all 0.15s;
+}
+
+.neu-btn:active {
+  box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);
+  transform: translateY(1px);
+}
+
+.neu-inset {
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: inset 4px 4px 8px var(--shadow-dark), inset -4px -4px 8px var(--shadow-light);
+}

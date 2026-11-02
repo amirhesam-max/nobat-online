@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <pattern id="p" width="80" height="80" patternUnits="userSpaceOnUse">
+      <text x="20" y="55" font-size="40" opacity="0.08">🦷</text>
+    </pattern>
+  </defs>
+  <rect width="400" height="400" fill="url(#p)"/>
+</svg>
